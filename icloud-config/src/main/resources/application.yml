@@ -1,0 +1,27 @@
+spring:
+    application:
+        name: icloud-config
+    cloud:
+        config:
+            server:
+                git:
+                  uri: https://gitee.com/icloud-iot/icloud-config
+                  search-paths: DEV                            # git仓库地址下的相对地址，可以配置多个，用,分割。
+                  username: shangzhi.li@skyroam.com            # git仓库的账号
+                  password: skyroam2019                        # git仓库的密码
+                  #basedir: E:\Java_IDEA\config\basedir   当前本地路径地址
+                                         
+server:
+    port: 8750 #启动端口
+eureka:
+    instance:
+        statusPageUrlPath: /info
+        healthCheckUrlPath: /health
+        #docker 部署开启
+        prefer-ip-address: true   
+        hostname: 192.168.13.170
+        ip-address: 192.168.13.170
+    client:
+        serviceUrl:
+            # docker 部署开启
+            defaultZone: http://${EUREKA_HOST:192.168.13.177}:${EUREKA_PORT:8761}/eureka/

@@ -1,0 +1,475 @@
+{
+	"info": {
+		"_postman_id": "69b28fce-ae4e-4181-9120-2de964a204e7",
+		"name": "iCloud-IOT / VSIM 开放API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "用户管理",
+			"item": [
+				{
+					"name": "注册用户",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "skyroam^iot*",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "skyroam",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-tenant-flag",
+								"value": "1"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "account",
+									"value": "18888888888",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456                  ",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://192.168.13.177:8765/api/ac88ceb386aa4231b09bf472cb937c24/open/CUser/register",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"13",
+								"177"
+							],
+							"port": "8765",
+							"path": [
+								"api",
+								"ac88ceb386aa4231b09bf472cb937c24",
+								"open",
+								"CUser",
+								"register"
+							],
+							"query": [
+								{
+									"key": "mobile",
+									"value": "13688525987",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "888888",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "用户获取token",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "skyroam^iot*",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "skyroam",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-tenant-flag",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "18888888888",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://192.168.13.177:8765/api/ac88ceb386aa4231b09bf472cb937c24/open/oauth/token",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"13",
+								"177"
+							],
+							"port": "8765",
+							"path": [
+								"api",
+								"ac88ceb386aa4231b09bf472cb937c24",
+								"open",
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "商品管理",
+			"item": [
+				{
+					"name": "查询租户基础商品",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-tenant-flag",
+								"value": "1"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxODg4ODg4ODg4OCIsInVzZXJfbmFtZSI6IjE4ODg4ODg4ODg4Iiwic2NvcGUiOlsic2t5cm9hbSJdLCJleHBpcmUiOjE1NTE4NTY2NTI4NjQsImV4cCI6MTU1MTg1NjY1MiwidXNlck5hbWUiOiJ4eHhfMTg4ODg4ODg4ODgiLCJ1c2VySWQiOiIxMTU2ZWRhYzBjZmE0OTE4ODFhYjVjYmJlODkyODU5YiIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIwNzgyYmJiOC02MWRmLTRhZjgtOGEwOS0yMDdjMWZjMGQxZGYiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InNreXJvYW0ifQ.VWOA7XcwKNasI0ZrKbL16E0Lktczl456qi50_SdHgCTaj3EVHNLnoS_Sek6dMSJC1UqP1x7og2cw7eLDBLfmOcKddaRiitb1ArpcSQDGJJdPG_zwF2WnoWgghkxrhY9LWiV0vI7K2yKYzNPui73N38VTxDziqQwyNFxlghZRVB0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "http://192.168.13.177:8765/api/ac88ceb386aa4231b09bf472cb937c24/open/baseItem/getBaseItemList",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"13",
+								"177"
+							],
+							"port": "8765",
+							"path": [
+								"api",
+								"ac88ceb386aa4231b09bf472cb937c24",
+								"open",
+								"baseItem",
+								"getBaseItemList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "终端管理",
+			"item": [
+				{
+					"name": "终端绑定用户",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-tenant-flag",
+								"value": "1"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxODg4ODg4ODg4OCIsInVzZXJfbmFtZSI6IjE4ODg4ODg4ODg4Iiwic2NvcGUiOlsic2t5cm9hbSJdLCJleHBpcmUiOjE1NTE4NTY2NTI4NjQsImV4cCI6MTU1MTg1NjY1MiwidXNlck5hbWUiOiJ4eHhfMTg4ODg4ODg4ODgiLCJ1c2VySWQiOiIxMTU2ZWRhYzBjZmE0OTE4ODFhYjVjYmJlODkyODU5YiIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIwNzgyYmJiOC02MWRmLTRhZjgtOGEwOS0yMDdjMWZjMGQxZGYiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InNreXJvYW0ifQ.VWOA7XcwKNasI0ZrKbL16E0Lktczl456qi50_SdHgCTaj3EVHNLnoS_Sek6dMSJC1UqP1x7og2cw7eLDBLfmOcKddaRiitb1ArpcSQDGJJdPG_zwF2WnoWgghkxrhY9LWiV0vI7K2yKYzNPui73N38VTxDziqQwyNFxlghZRVB0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"imei\":\"852369852147999\",\"deviceType\":\"1\"}"
+						},
+						"url": {
+							"raw": "http://192.168.13.177:8765/api/ac88ceb386aa4231b09bf472cb937c24/open/device/bindDevice",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"13",
+								"177"
+							],
+							"port": "8765",
+							"path": [
+								"api",
+								"ac88ceb386aa4231b09bf472cb937c24",
+								"open",
+								"device",
+								"bindDevice"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "订单管理",
+			"item": [
+				{
+					"name": "创建订单",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-tenant-flag",
+								"value": "1",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxODg4ODg4ODg4OCIsInVzZXJfbmFtZSI6IjE4ODg4ODg4ODg4Iiwic2NvcGUiOlsic2t5cm9hbSJdLCJleHBpcmUiOjE1NTE4NTY2NTI4NjQsImV4cCI6MTU1MTg1NjY1MiwidXNlck5hbWUiOiJ4eHhfMTg4ODg4ODg4ODgiLCJ1c2VySWQiOiIxMTU2ZWRhYzBjZmE0OTE4ODFhYjVjYmJlODkyODU5YiIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIwNzgyYmJiOC02MWRmLTRhZjgtOGEwOS0yMDdjMWZjMGQxZGYiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InNreXJvYW0ifQ.VWOA7XcwKNasI0ZrKbL16E0Lktczl456qi50_SdHgCTaj3EVHNLnoS_Sek6dMSJC1UqP1x7og2cw7eLDBLfmOcKddaRiitb1ArpcSQDGJJdPG_zwF2WnoWgghkxrhY9LWiV0vI7K2yKYzNPui73N38VTxDziqQwyNFxlghZRVB0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"deviceType\":1,\n\t\"partnerOrderNo\":\"7895648972222\",\n    \"itemList\":\n\t[\n\t{\n\t\t\"baseItemId\":5,\n\t\t\"baseItemCount\":300,\n\t\t\"quantity\":8,\n\t\t\"startTime\":\"2018-12-01 12:59:59\",\n        \"endTime\":\"2019-11-01 12:59:59\"\n\t}]\n}"
+						},
+						"url": {
+							"raw": "http://192.168.13.177:8765/api/ac88ceb386aa4231b09bf472cb937c24/open/order/createOrder",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"13",
+								"177"
+							],
+							"port": "8765",
+							"path": [
+								"api",
+								"ac88ceb386aa4231b09bf472cb937c24",
+								"open",
+								"order",
+								"createOrder"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "资产管理",
+			"item": [
+				{
+					"name": "查询终端用户资产信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-tenant-flag",
+								"value": "1",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxODg4ODg4ODg4OCIsInVzZXJfbmFtZSI6IjE4ODg4ODg4ODg4Iiwic2NvcGUiOlsic2t5cm9hbSJdLCJleHBpcmUiOjE1NTE4NTY2NTI4NjQsImV4cCI6MTU1MTg1NjY1MiwidXNlck5hbWUiOiJ4eHhfMTg4ODg4ODg4ODgiLCJ1c2VySWQiOiIxMTU2ZWRhYzBjZmE0OTE4ODFhYjVjYmJlODkyODU5YiIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIwNzgyYmJiOC02MWRmLTRhZjgtOGEwOS0yMDdjMWZjMGQxZGYiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InNreXJvYW0ifQ.VWOA7XcwKNasI0ZrKbL16E0Lktczl456qi50_SdHgCTaj3EVHNLnoS_Sek6dMSJC1UqP1x7og2cw7eLDBLfmOcKddaRiitb1ArpcSQDGJJdPG_zwF2WnoWgghkxrhY9LWiV0vI7K2yKYzNPui73N38VTxDziqQwyNFxlghZRVB0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"limit\":1,\"page\":1,\"assetsType\":0}"
+						},
+						"url": {
+							"raw": "http://192.168.13.177:8765/api/ac88ceb386aa4231b09bf472cb937c24/open/assets/getAssets",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"13",
+								"177"
+							],
+							"port": "8765",
+							"path": [
+								"api",
+								"ac88ceb386aa4231b09bf472cb937c24",
+								"open",
+								"assets",
+								"getAssets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "激活资产",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"deviceType\":1,\n\"imei\":\"111111111111125\",\n\"subsId\":176,\n\"quantity\":5,\n\"mcc\":222\n}"
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "退订用户资产",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://192.168.13.177:8765/api/ac88ceb386aa4231b09bf472cb937c24/open/assets/activateAssets",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"13",
+								"177"
+							],
+							"port": "8765",
+							"path": [
+								"api",
+								"ac88ceb386aa4231b09bf472cb937c24",
+								"open",
+								"assets",
+								"activateAssets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "强制失效用户资产",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-tenant-flag",
+								"value": "1",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxODg4ODg4ODg4OCIsInVzZXJfbmFtZSI6IjE4ODg4ODg4ODg4Iiwic2NvcGUiOlsic2t5cm9hbSJdLCJleHBpcmUiOjE1NTE4NTY2NTI4NjQsImV4cCI6MTU1MTg1NjY1MiwidXNlck5hbWUiOiJ4eHhfMTg4ODg4ODg4ODgiLCJ1c2VySWQiOiIxMTU2ZWRhYzBjZmE0OTE4ODFhYjVjYmJlODkyODU5YiIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIwNzgyYmJiOC02MWRmLTRhZjgtOGEwOS0yMDdjMWZjMGQxZGYiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InNreXJvYW0ifQ.VWOA7XcwKNasI0ZrKbL16E0Lktczl456qi50_SdHgCTaj3EVHNLnoS_Sek6dMSJC1UqP1x7og2cw7eLDBLfmOcKddaRiitb1ArpcSQDGJJdPG_zwF2WnoWgghkxrhY9LWiV0vI7K2yKYzNPui73N38VTxDziqQwyNFxlghZRVB0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://192.168.13.177:8765/api/ac88ceb386aa4231b09bf472cb937c24/open/assets/cancelledAssets",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"13",
+								"177"
+							],
+							"port": "8765",
+							"path": [
+								"api",
+								"ac88ceb386aa4231b09bf472cb937c24",
+								"open",
+								"assets",
+								"cancelledAssets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

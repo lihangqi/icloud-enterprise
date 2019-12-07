@@ -1,0 +1,151 @@
+#spring:
+#  cloud:
+#    config:
+#        discovery:
+#           service-id: icloud-config
+#           enabled: true
+#        label: master  # git \u5206\u652f
+#        name: auth
+#        profile: dev
+
+# \u57fa\u7840\u914d\u7f6e
+spring:
+    application:
+        name: icloud-auth
+    jackson:
+        date-format: yyyy-MM-dd HH:mm:ss
+        time-zone: GMT+8
+        default-property-inclusion: non_null
+    redis:
+        database: 2
+        host: ${REDIS_HOST:192.168.1.14}
+        port: ${REDIS_PORT:6379}
+        pool:
+            max-active: 30
+    datasource:
+      name: test
+      url: jdbc:mysql://${MYSQL_HOST:192.168.1.14}:${MYSQL_PORT:3306}/icloud_auth?useUnicode=true&characterEncoding=UTF8
+      username: root
+      password: devops
+      # \u4f7f\u7528druid\u6570\u636e\u6e90
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      filters: stat
+      maxActive: 20
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+    rabbitmq:
+       host: ${RABBIT_MQ_HOST:192.168.1.14}
+       port: ${RABBIT_MQ_PORT:5672}
+       username: guest
+       password: guest
+    zipkin:
+        enabled: true
+    sleuth:
+        sampler:
+            percentage: 1
+            
+# Mybatis \u6620\u5c04\u914d\u7f6e
+mybatis:
+    basepackage: com.gitee.icloud.iot.auth.mapper
+    xmlLocation: classpath:mapper/**/*.xml
+    mapper-locations: "classpath*:mapper/*.xml"
+    
+#\u542f\u52a8\u7aef\u53e3
+server:
+    port: 9777 
+
+# Feign \u8bf7\u6c42\u914d\u7f6e
+feign:
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
+
+# Ribbon \u5206\u53d1\u914d\u7f6e
+ribbon:
+  eureka:
+    enabled: true
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
+  OkToRetryOnAllOperations: false
+
+# \u7194\u65ad\u5668\u914d\u7f6e
+hystrix:
+  threadpool:
+    default:
+      coreSize: 1000 ##\u5e76\u53d1\u6267\u884c\u7684\u6700\u5927\u7ebf\u7a0b\u6570\uff0c\u9ed8\u8ba410
+      maxQueueSize: 1000 ##BlockingQueue\u7684\u6700\u5927\u961f\u5217\u6570
+      queueSizeRejectionThreshold: 500 ##\u5373\u4f7fmaxQueueSize\u6ca1\u6709\u8fbe\u5230\uff0c\u8fbe\u5230queueSizeRejectionThreshold\u8be5\u503c\u540e\uff0c\u8bf7\u6c42\u4e5f\u4f1a\u88ab\u62d2\u7edd
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 15000
+
+# \u6ce8\u518c\u4e2d\u5fc3\u914d\u7f6e
+eureka:
+    instance:
+        statusPageUrlPath: /info
+        healthCheckUrlPath: /health
+        hostname: 192.168.13.177
+        ip-address: 192.168.13.177
+        prefer-ip-address: true    #\u663e\u793aIP\u5730\u5740
+    client:
+        serviceUrl: 
+            defaultZone: http://${EUREKA_HOST:192.168.13.177}:${EUREKA_PORT:8761}/eureka/
+
+# \u670d\u52a1\u7aef\u8ba4\u8bc1\u79c1\u94a5
+jwt:
+  token-header: Authorization
+  expire: 3600
+  rsa-secret: xx1WET12^%3^(WE45
+  user-service: icloud-upms
+
+# \u5ba2\u6237\u7aef\u8eab\u4efd\u4ee4\u724c
+client:
+  id: icloud-auth
+  secret: 123456
+  token-header: client-token
+  expire: 3600
+  rsa-secret: x2318^^(*WRYQWR(QW&T
+
+#AES \u52a0\u5bc6\u914d\u7f6e
+redis:
+  aec-key: xx288&^^%$!@#4dc
+  aec-iv: 0123456789abcdef
+
+# \u914d\u7f6eswagger
+swagger:
+    enabled: true
+    base-package: com.gitee.icloud.iot.auth
+    title: icloud-auth
+    version: 1.0.0.SNAPSHOT
+    description: \u9274\u6743\u670d\u52a1
+    contact:
+        name: auth
+        
+# \u901a\u7528Mapper \u626b\u63cf\u914d\u7f6e
+mapper:
+  mappers: com.gitee.icloud.iot.common.mapper.CommonMapper
+
+# \u65e5\u5fd7\u914d\u7f6e
+logging:
+  level:
+    root: info
+    ## \u8fd9\u91cc\u8bbe\u7f6e\u4e3ainfo\uff0c\u662f\u56e0\u4e3a\u5982\u679c\u4e0d\u8bbe\u7f6e\uff0cdebug\u65f6\u4f1a\u4e0d\u65ad\u6253\u5370mq\u65e5\u5fd7\u3002
+    org.springframework.integration.endpoint.SourcePollingChannelAdapter: info
+#   org.springframework.security: DEBUG
+    tk.mybatis: info

@@ -1,0 +1,6 @@
+version: '2'
+services:
+  eureka:
+    image: icloud/icloud-center
+    ports:
+      - "8761:8761"

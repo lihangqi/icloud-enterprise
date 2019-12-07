@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "93f18b3f-91cf-4284-8f68-02063ca7ae6e",
+		"name": "iCloud-IOT / VSIM C端用户管理",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "注册用户",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "skyroam^iot*",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "skyroam",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-tenant-flag",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobile",
+							"value": "13680348515",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8765/api/ac88ceb386aa4231b09bf472cb937c24/app/appUser/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8765",
+					"path": [
+						"api",
+						"ac88ceb386aa4231b09bf472cb937c24",
+						"app",
+						"appUser",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		
+		{
+			"name": "用户登录",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "skyroam",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "skyroam^iot*",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-tenant-flag",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "13680348517",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8765/api/ac88ceb386aa4231b09bf472cb937c24/app/oauth/token",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8765",
+					"path": [
+						"api",
+						"ac88ceb386aa4231b09bf472cb937c24",
+						"app",
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

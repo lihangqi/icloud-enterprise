@@ -1,0 +1,2804 @@
+{
+	"info": {
+		"_postman_id": "5ed6ddc0-c2c0-4af5-9fcd-8c3d6771d2e9",
+		"name": "iCloud-IOT 企业版",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "基础服务配置",
+			"item": [
+				{
+					"name": "操作日志管理",
+					"item": [
+						{
+							"name": "获取操作日志列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNjcxNzIyODksImV4cCI6MTU0NDE3Nzk3MiwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIzMjBmZGU0Ni00N2VkLTQyZjgtYjcwNC1hZjU4NGE1MTE1ZGUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.ZHOYnJbsmBMDaSkDpAhv3OFiyP0tXS_vkybStlP1zhk2UM5edoTWzqK-S9z18Z6a_y-ZDCo9LL_H4rEfPGJlP9D1yQWkM9TYoBy739ihjtcSjqghf5FuVRKIs-xHqeIK-MWyggPfttrdxas2ROqm9ZCtJFrBREmgWHnJ05V7c9Q",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/admin/gateLog/page?page=1&limit=20",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"admin",
+										"gateLog",
+										"page"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "数据字典管理",
+					"item": [
+						{
+							"name": "获取数据字典目录",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNjcxNzIyODksImV4cCI6MTU0NDE3Nzk3MiwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIzMjBmZGU0Ni00N2VkLTQyZjgtYjcwNC1hZjU4NGE1MTE1ZGUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.ZHOYnJbsmBMDaSkDpAhv3OFiyP0tXS_vkybStlP1zhk2UM5edoTWzqK-S9z18Z6a_y-ZDCo9LL_H4rEfPGJlP9D1yQWkM9TYoBy739ihjtcSjqghf5FuVRKIs-xHqeIK-MWyggPfttrdxas2ROqm9ZCtJFrBREmgWHnJ05V7c9Q",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/dict/dictType/tree",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"dict",
+										"dictType",
+										"tree"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "角色类型管理",
+					"item": [
+						{
+							"name": "获取角色类型列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNjcxNzIyODksImV4cCI6MTU0NDE3Nzk3MiwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIzMjBmZGU0Ni00N2VkLTQyZjgtYjcwNC1hZjU4NGE1MTE1ZGUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.ZHOYnJbsmBMDaSkDpAhv3OFiyP0tXS_vkybStlP1zhk2UM5edoTWzqK-S9z18Z6a_y-ZDCo9LL_H4rEfPGJlP9D1yQWkM9TYoBy739ihjtcSjqghf5FuVRKIs-xHqeIK-MWyggPfttrdxas2ROqm9ZCtJFrBREmgWHnJ05V7c9Q",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/admin/groupType/page?page=1&limit=20",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"admin",
+										"groupType",
+										"page"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "新增角色类型信息",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNjcxNzIyODksImV4cCI6MTU0NDE3Nzk3MiwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIzMjBmZGU0Ni00N2VkLTQyZjgtYjcwNC1hZjU4NGE1MTE1ZGUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.ZHOYnJbsmBMDaSkDpAhv3OFiyP0tXS_vkybStlP1zhk2UM5edoTWzqK-S9z18Z6a_y-ZDCo9LL_H4rEfPGJlP9D1yQWkM9TYoBy739ihjtcSjqghf5FuVRKIs-xHqeIK-MWyggPfttrdxas2ROqm9ZCtJFrBREmgWHnJ05V7c9Q",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"xxxx\",\n    \"sex\": \"男\",\n    \"description\": \"xxxxxx\",\n    \"code\": \"dddddd\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/admin/groupType",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"admin",
+										"groupType"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "获取角色类型信息",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNjcxNzIyODksImV4cCI6MTU0NDE3Nzk3MiwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIzMjBmZGU0Ni00N2VkLTQyZjgtYjcwNC1hZjU4NGE1MTE1ZGUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.ZHOYnJbsmBMDaSkDpAhv3OFiyP0tXS_vkybStlP1zhk2UM5edoTWzqK-S9z18Z6a_y-ZDCo9LL_H4rEfPGJlP9D1yQWkM9TYoBy739ihjtcSjqghf5FuVRKIs-xHqeIK-MWyggPfttrdxas2ROqm9ZCtJFrBREmgWHnJ05V7c9Q",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/admin/groupType/796426c0728e42859a94f3f8307c19ab",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"admin",
+										"groupType",
+										"796426c0728e42859a94f3f8307c19ab"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改角色类型信息",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNjcxNzIyODksImV4cCI6MTU0NDE3Nzk3MiwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIzMjBmZGU0Ni00N2VkLTQyZjgtYjcwNC1hZjU4NGE1MTE1ZGUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.ZHOYnJbsmBMDaSkDpAhv3OFiyP0tXS_vkybStlP1zhk2UM5edoTWzqK-S9z18Z6a_y-ZDCo9LL_H4rEfPGJlP9D1yQWkM9TYoBy739ihjtcSjqghf5FuVRKIs-xHqeIK-MWyggPfttrdxas2ROqm9ZCtJFrBREmgWHnJ05V7c9Q",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"796426c0728e42859a94f3f8307c19ab\",\n    \"code\": \"dddddd\",\n    \"name\": \"xxxx\",\n    \"description\": \"xxxxxx\",\n    \"crtTime\": \"2018-12-07 15:18:18\",\n    \"crtUser\": \"1\",\n    \"crtName\": \"李尚志\",\n    \"updTime\": \"2018-12-07 15:18:18\",\n    \"updUser\": \"1\",\n    \"updName\": \"李尚志\",\n    \"tenantId\": \"ac88ceb386aa4231b09bf472cb937c24\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/admin/groupType/796426c0728e42859a94f3f8307c19ab",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"admin",
+										"groupType",
+										"796426c0728e42859a94f3f8307c19ab"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "用户模块",
+					"item": [
+						{
+							"name": "用户登录",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "vue",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "vue",
+											"type": "string"
+										},
+										{
+											"key": "saveHelperData",
+											"type": "any"
+										},
+										{
+											"key": "showPassword",
+											"value": false,
+											"type": "boolean"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "grant_type",
+											"value": "password",
+											"type": "text"
+										},
+										{
+											"key": "username",
+											"value": "admin",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://192.168.13.177:8765/api/auth/oauth/token",
+									"protocol": "http",
+									"host": [
+										"192",
+										"168",
+										"13",
+										"177"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"auth",
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "获取用户列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDY4NDU3ODc3ODksImV4cCI6MTU0Njg1NjU4NywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5MWU0MmU2NC1jNGRiLTQ2ODAtYTJlNC1iNWJlZTgxMDFjOTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ot4g8NIalDD5VCBqfgHd6D1yCV9xfD3sIfRPEWOFHQzzSoNSqG82WH3zPSqHg_K5k_Prv4mK1dcnmcDtnnyE6vxwrGphdutwNWNISATNRKDqJzRd91yEq9Sr54GKaMHfkkMYF5YJqVO8y2gv3bIJOpt_3H8b49GbUn3NFnlHRBA"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/user/page",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"user",
+										"page"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "获取用户详情",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDY4NDU3ODc3ODksImV4cCI6MTU0Njg1NjU4NywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5MWU0MmU2NC1jNGRiLTQ2ODAtYTJlNC1iNWJlZTgxMDFjOTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ot4g8NIalDD5VCBqfgHd6D1yCV9xfD3sIfRPEWOFHQzzSoNSqG82WH3zPSqHg_K5k_Prv4mK1dcnmcDtnnyE6vxwrGphdutwNWNISATNRKDqJzRd91yEq9Sr54GKaMHfkkMYF5YJqVO8y2gv3bIJOpt_3H8b49GbUn3NFnlHRBA"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/user/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"user",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改用户信息",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDY4NDU3ODc3ODksImV4cCI6MTU0Njg1NjU4NywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5MWU0MmU2NC1jNGRiLTQ2ODAtYTJlNC1iNWJlZTgxMDFjOTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ot4g8NIalDD5VCBqfgHd6D1yCV9xfD3sIfRPEWOFHQzzSoNSqG82WH3zPSqHg_K5k_Prv4mK1dcnmcDtnnyE6vxwrGphdutwNWNISATNRKDqJzRd91yEq9Sr54GKaMHfkkMYF5YJqVO8y2gv3bIJOpt_3H8b49GbUn3NFnlHRBA"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"1\",\n    \"username\": \"admin\",\n    \"name\": \"李尚志\",\n    \"birthday\": \"\",\n    \"mobilePhone\": \"\",\n    \"email\": \"\",\n    \"sex\": \"男\",\n    \"description\": \"postman调试\",\n    \"updUserName\": \"李尚志\",\n    \"updUserId\": \"1\",\n    \"updTime\": \"2018-12-06 17:26:15\",\n    \"isDeleted\": \"0\",\n    \"isDisabled\": \"0\",\n    \"departId\": \"root\",\n    \"isSuperAdmin\": \"1\",\n    \"tenantId\": \"ac88ceb386aa4231b09bf472cb937c24\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/user/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"user",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "新增用户信息",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQwOTE1OTMyNjgsImV4cCI6MTU0NDEwMjM5MywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5ZTczMzM2NC0wODVkLTQ5ZjMtODM5MS0zZTZhMjM1YWNmYTMiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.lHYgLzfGoFVHgRey-czp7_vEmDydv4SWJkPFbjvGrM7R2nX524QE3mH28AtPZf_G4F8_GUb8goZPQi-ZsWaxmlVggbG0sdpVd3_m2iIk8NDxR4aQskTheFjOECqob4w1u-wcXFS2xarN7ws0ThwcIK2ygcfRddjA7gNviDkLbDg"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"departId\": \"root\",\n\t\"departName\": \"超级租户部门\",\n\t\"description\": \"测试\",\n\t\"name\": \"测试\",\n\t\"password\": \"123456\",\n\t\"sex\": \"男\",\n\t\"username\": \"testabc\"\t\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/user",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "删除用户数据",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQwOTE1OTMyNjgsImV4cCI6MTU0NDEwMjM5MywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5ZTczMzM2NC0wODVkLTQ5ZjMtODM5MS0zZTZhMjM1YWNmYTMiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.lHYgLzfGoFVHgRey-czp7_vEmDydv4SWJkPFbjvGrM7R2nX524QE3mH28AtPZf_G4F8_GUb8goZPQi-ZsWaxmlVggbG0sdpVd3_m2iIk8NDxR4aQskTheFjOECqob4w1u-wcXFS2xarN7ws0ThwcIK2ygcfRddjA7gNviDkLbDg"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/user/c10df6c25f8242fc8c9f5c263e321290",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"user",
+										"c10df6c25f8242fc8c9f5c263e321290"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "搜索用户",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQwOTE1OTMyNjgsImV4cCI6MTU0NDEwMjM5MywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5ZTczMzM2NC0wODVkLTQ5ZjMtODM5MS0zZTZhMjM1YWNmYTMiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.lHYgLzfGoFVHgRey-czp7_vEmDydv4SWJkPFbjvGrM7R2nX524QE3mH28AtPZf_G4F8_GUb8goZPQi-ZsWaxmlVggbG0sdpVd3_m2iIk8NDxR4aQskTheFjOECqob4w1u-wcXFS2xarN7ws0ThwcIK2ygcfRddjA7gNviDkLbDg"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/user/page",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"user",
+										"page"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "菜单管理",
+					"item": [
+						{
+							"name": "菜单管理",
+							"item": [
+								{
+									"name": "获取菜单树信息",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNTI2NDg0NjksImV4cCI6MTU0NDE2MzQ0OCwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIxNGY4ZWE2ZS03Mzg2LTRhNDMtOTZlNi1mZmRhZjJhYmY0MDUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.fcgCE1NfbmCOkiNpfL6wPTdZNGEW7LTdSD5UMW0rewuev6m15wLmau_l1dQkn1mQus8vR6q7KzZRnDHh_XInZ6fF76ECMbAVY6SGgXvQX8ox2H7GYHmEAs9Jfy-0Z4KOicMZxpsgaasJu4E0R7n6BlJoYb3J5SsGoeo7zamRAGM",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/menu/tree",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"menu",
+												"tree"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "删除菜单树",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNTI2NDg0NjksImV4cCI6MTU0NDE2MzQ0OCwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIxNGY4ZWE2ZS03Mzg2LTRhNDMtOTZlNi1mZmRhZjJhYmY0MDUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.fcgCE1NfbmCOkiNpfL6wPTdZNGEW7LTdSD5UMW0rewuev6m15wLmau_l1dQkn1mQus8vR6q7KzZRnDHh_XInZ6fF76ECMbAVY6SGgXvQX8ox2H7GYHmEAs9Jfy-0Z4KOicMZxpsgaasJu4E0R7n6BlJoYb3J5SsGoeo7zamRAGM",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/menu/94c1925d1fc942dca34852c04bf78871",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"menu",
+												"94c1925d1fc942dca34852c04bf78871"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "添加节点菜单信息",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNTI2NDg0NjksImV4cCI6MTU0NDE2MzQ0OCwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIxNGY4ZWE2ZS03Mzg2LTRhNDMtOTZlNi1mZmRhZjJhYmY0MDUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.fcgCE1NfbmCOkiNpfL6wPTdZNGEW7LTdSD5UMW0rewuev6m15wLmau_l1dQkn1mQus8vR6q7KzZRnDHh_XInZ6fF76ECMbAVY6SGgXvQX8ox2H7GYHmEAs9Jfy-0Z4KOicMZxpsgaasJu4E0R7n6BlJoYb3J5SsGoeo7zamRAGM"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"code\": \"xxxxxxxxxxx\",\n    \"title\": \"xxxxxxxx\",\n    \"parentId\": \"5\",\n    \"href\": \"xxxxxxxxxxx\",\n    \"icon\": \"xxxxxxxxxxx\",\n    \"orderNum\": \"1\",\n    \"description\": \"cccccccc\",\n    \"type\": \"menu\",\n    \"attr1\": \"ccccc\"\n}"
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/menu",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"menu"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "获取单个节点菜单信息",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNTI2NDg0NjksImV4cCI6MTU0NDE2MzQ0OCwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIxNGY4ZWE2ZS03Mzg2LTRhNDMtOTZlNi1mZmRhZjJhYmY0MDUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.fcgCE1NfbmCOkiNpfL6wPTdZNGEW7LTdSD5UMW0rewuev6m15wLmau_l1dQkn1mQus8vR6q7KzZRnDHh_XInZ6fF76ECMbAVY6SGgXvQX8ox2H7GYHmEAs9Jfy-0Z4KOicMZxpsgaasJu4E0R7n6BlJoYb3J5SsGoeo7zamRAGM",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/menu/94c1925d1fc942dca34852c04bf78871",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"menu",
+												"94c1925d1fc942dca34852c04bf78871"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "修改节点菜单信息",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNTI2NDg0NjksImV4cCI6MTU0NDE2MzQ0OCwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIxNGY4ZWE2ZS03Mzg2LTRhNDMtOTZlNi1mZmRhZjJhYmY0MDUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.fcgCE1NfbmCOkiNpfL6wPTdZNGEW7LTdSD5UMW0rewuev6m15wLmau_l1dQkn1mQus8vR6q7KzZRnDHh_XInZ6fF76ECMbAVY6SGgXvQX8ox2H7GYHmEAs9Jfy-0Z4KOicMZxpsgaasJu4E0R7n6BlJoYb3J5SsGoeo7zamRAGM",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"94c1925d1fc942dca34852c04bf78871\",\n    \"code\": \"xxxxxxddd\",\n    \"title\": \"xxxxxxxx\",\n    \"parentId\": \"5\",\n    \"href\": \"xxxxxxxxxxx\",\n    \"icon\": \"xxxxxxxxxxx\",\n    \"type\": \"menu\",\n    \"description\": \"cccccccc\",\n    \"orderNum\": 1,\n    \"crtTime\": \"2018-12-07 11:18:06\",\n    \"crtUser\": \"1\",\n    \"crtName\": \"李尚志\",\n    \"updTime\": \"2018-12-07 11:18:06\",\n    \"updUser\": \"1\",\n    \"updName\": \"李尚志\",\n    \"attr1\": \"ccccc\",\n    \"path\": \"/adminSys/baseManager/xxxxxxxxxxx\",\n    \"tenantId\": \"ac88ceb386aa4231b09bf472cb937c24\"\n}"
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/menu/94c1925d1fc942dca34852c04bf78871",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"menu",
+												"94c1925d1fc942dca34852c04bf78871"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "按钮或资产管理",
+							"item": [
+								{
+									"name": "搜索按钮或资源列表",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNTI2NDg0NjksImV4cCI6MTU0NDE2MzQ0OCwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIxNGY4ZWE2ZS03Mzg2LTRhNDMtOTZlNi1mZmRhZjJhYmY0MDUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.fcgCE1NfbmCOkiNpfL6wPTdZNGEW7LTdSD5UMW0rewuev6m15wLmau_l1dQkn1mQus8vR6q7KzZRnDHh_XInZ6fF76ECMbAVY6SGgXvQX8ox2H7GYHmEAs9Jfy-0Z4KOicMZxpsgaasJu4E0R7n6BlJoYb3J5SsGoeo7zamRAGM",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/element/list?page=1&limit=20&menuId=6&name=dd",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"element",
+												"list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "limit",
+													"value": "20"
+												},
+												{
+													"key": "menuId",
+													"value": "6"
+												},
+												{
+													"key": "name",
+													"value": "dd"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "添加按钮或资源信息",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNTI2NDg0NjksImV4cCI6MTU0NDE2MzQ0OCwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIxNGY4ZWE2ZS03Mzg2LTRhNDMtOTZlNi1mZmRhZjJhYmY0MDUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.fcgCE1NfbmCOkiNpfL6wPTdZNGEW7LTdSD5UMW0rewuev6m15wLmau_l1dQkn1mQus8vR6q7KzZRnDHh_XInZ6fF76ECMbAVY6SGgXvQX8ox2H7GYHmEAs9Jfy-0Z4KOicMZxpsgaasJu4E0R7n6BlJoYb3J5SsGoeo7zamRAGM",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"code\": \"xxxx\",\n    \"type\": \"button\",\n    \"name\": \"xxxxxx\",\n    \"uri\": \"xxxxxx\",\n    \"menuId\": \"6\",\n    \"method\": \"GET\"\n}"
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/element",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"element"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "删除按钮或资源信息",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNTI2NDg0NjksImV4cCI6MTU0NDE2MzQ0OCwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIxNGY4ZWE2ZS03Mzg2LTRhNDMtOTZlNi1mZmRhZjJhYmY0MDUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.fcgCE1NfbmCOkiNpfL6wPTdZNGEW7LTdSD5UMW0rewuev6m15wLmau_l1dQkn1mQus8vR6q7KzZRnDHh_XInZ6fF76ECMbAVY6SGgXvQX8ox2H7GYHmEAs9Jfy-0Z4KOicMZxpsgaasJu4E0R7n6BlJoYb3J5SsGoeo7zamRAGM"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/element/66f8e40f9b5e4c52a8338a0b53b80359",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"element",
+												"66f8e40f9b5e4c52a8338a0b53b80359"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "获取按钮或资源信息",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNTI2NDg0NjksImV4cCI6MTU0NDE2MzQ0OCwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIxNGY4ZWE2ZS03Mzg2LTRhNDMtOTZlNi1mZmRhZjJhYmY0MDUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.fcgCE1NfbmCOkiNpfL6wPTdZNGEW7LTdSD5UMW0rewuev6m15wLmau_l1dQkn1mQus8vR6q7KzZRnDHh_XInZ6fF76ECMbAVY6SGgXvQX8ox2H7GYHmEAs9Jfy-0Z4KOicMZxpsgaasJu4E0R7n6BlJoYb3J5SsGoeo7zamRAGM"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/element/",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"element",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "修改按钮或资源信息",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNTI2NDg0NjksImV4cCI6MTU0NDE2MzQ0OCwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIxNGY4ZWE2ZS03Mzg2LTRhNDMtOTZlNi1mZmRhZjJhYmY0MDUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.fcgCE1NfbmCOkiNpfL6wPTdZNGEW7LTdSD5UMW0rewuev6m15wLmau_l1dQkn1mQus8vR6q7KzZRnDHh_XInZ6fF76ECMbAVY6SGgXvQX8ox2H7GYHmEAs9Jfy-0Z4KOicMZxpsgaasJu4E0R7n6BlJoYb3J5SsGoeo7zamRAGM",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"7120c334efc245349480653b025083f8\",\n    \"code\": \"ddddd\",\n    \"type\": \"button\",\n    \"name\": \"dddddd\",\n    \"uri\": \"ddddd\",\n    \"menuId\": \"6\",\n    \"method\": \"GET\",\n    \"crtTime\": \"2018-12-07 11:29:26\",\n    \"crtUser\": \"1\",\n    \"crtName\": \"李尚志\",\n    \"tenantId\": \"ac88ceb386aa4231b09bf472cb937c24\"\n}"
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/element/7120c334efc245349480653b025083f8",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"element",
+												"7120c334efc245349480653b025083f8"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "角色权限管理",
+					"item": [
+						{
+							"name": "自定义类型",
+							"item": [],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "岗位组",
+							"item": [
+								{
+									"name": "添加岗位",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": ""
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "角色组",
+							"item": [
+								{
+									"name": "添加角色信息",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNjcxNzIyODksImV4cCI6MTU0NDE3Nzk3MiwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIzMjBmZGU0Ni00N2VkLTQyZjgtYjcwNC1hZjU4NGE1MTE1ZGUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.ZHOYnJbsmBMDaSkDpAhv3OFiyP0tXS_vkybStlP1zhk2UM5edoTWzqK-S9z18Z6a_y-ZDCo9LL_H4rEfPGJlP9D1yQWkM9TYoBy739ihjtcSjqghf5FuVRKIs-xHqeIK-MWyggPfttrdxas2ROqm9ZCtJFrBREmgWHnJ05V7c9Q",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"parentId\": \"258651cfd4ca41cbaa70d1b233659b5c\",\n    \"code\": \"CTEST\",\n    \"name\": \"测试角色\",\n    \"description\": \"SSS\",\n    \"groupType\": \"role\"\n}"
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/group",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"group"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "获取角色信息",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNjcxNzIyODksImV4cCI6MTU0NDE3Nzk3MiwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIzMjBmZGU0Ni00N2VkLTQyZjgtYjcwNC1hZjU4NGE1MTE1ZGUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.ZHOYnJbsmBMDaSkDpAhv3OFiyP0tXS_vkybStlP1zhk2UM5edoTWzqK-S9z18Z6a_y-ZDCo9LL_H4rEfPGJlP9D1yQWkM9TYoBy739ihjtcSjqghf5FuVRKIs-xHqeIK-MWyggPfttrdxas2ROqm9ZCtJFrBREmgWHnJ05V7c9Q",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/group/48b556216d284259aff73b11fc6bc4f6",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"group",
+												"48b556216d284259aff73b11fc6bc4f6"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "修改角色信息",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNjcxNzIyODksImV4cCI6MTU0NDE3Nzk3MiwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIzMjBmZGU0Ni00N2VkLTQyZjgtYjcwNC1hZjU4NGE1MTE1ZGUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.ZHOYnJbsmBMDaSkDpAhv3OFiyP0tXS_vkybStlP1zhk2UM5edoTWzqK-S9z18Z6a_y-ZDCo9LL_H4rEfPGJlP9D1yQWkM9TYoBy739ihjtcSjqghf5FuVRKIs-xHqeIK-MWyggPfttrdxas2ROqm9ZCtJFrBREmgWHnJ05V7c9Q",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": \"929f7d5010274b14993e7041f81828ce\",\n    \"code\": \"CTEST\",\n    \"name\": \"测试角色\",\n    \"parentId\": \"258651cfd4ca41cbaa70d1b233659b5c\",\n    \"path\": \"/commonAdmin/CTEST\",\n    \"groupType\": \"role\",\n    \"description\": \"SSS\",\n    \"crtUserName\": \"李尚志\",\n    \"crtUserId\": \"1\",\n    \"crtTime\": \"2018-12-07 14:20:01\",\n    \"updUserName\": \"李尚志\",\n    \"updUserId\": \"1\",\n    \"updTime\": \"2018-12-07 14:20:01\",\n    \"tenantId\": \"ac88ceb386aa4231b09bf472cb937c24\"\n}"
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/group/48b556216d284259aff73b11fc6bc4f6",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"group",
+												"48b556216d284259aff73b11fc6bc4f6"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "删除角色信息",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNjcxNzIyODksImV4cCI6MTU0NDE3Nzk3MiwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIzMjBmZGU0Ni00N2VkLTQyZjgtYjcwNC1hZjU4NGE1MTE1ZGUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.ZHOYnJbsmBMDaSkDpAhv3OFiyP0tXS_vkybStlP1zhk2UM5edoTWzqK-S9z18Z6a_y-ZDCo9LL_H4rEfPGJlP9D1yQWkM9TYoBy739ihjtcSjqghf5FuVRKIs-xHqeIK-MWyggPfttrdxas2ROqm9ZCtJFrBREmgWHnJ05V7c9Q",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/group/e891233fe7a84798b4cacf116cfccbc3",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"group",
+												"e891233fe7a84798b4cacf116cfccbc3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "获取角色信息集合",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNjcxNzIyODksImV4cCI6MTU0NDE3Nzk3MiwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIzMjBmZGU0Ni00N2VkLTQyZjgtYjcwNC1hZjU4NGE1MTE1ZGUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.ZHOYnJbsmBMDaSkDpAhv3OFiyP0tXS_vkybStlP1zhk2UM5edoTWzqK-S9z18Z6a_y-ZDCo9LL_H4rEfPGJlP9D1yQWkM9TYoBy739ihjtcSjqghf5FuVRKIs-xHqeIK-MWyggPfttrdxas2ROqm9ZCtJFrBREmgWHnJ05V7c9Q",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/group/tree?groupType=role",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"group",
+												"tree"
+											],
+											"query": [
+												{
+													"key": "groupType",
+													"value": "role"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "> 分配权限",
+							"item": [
+								{
+									"name": "获取权限菜单树",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNjcxNzIyODksImV4cCI6MTU0NDE3Nzk3MiwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIzMjBmZGU0Ni00N2VkLTQyZjgtYjcwNC1hZjU4NGE1MTE1ZGUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.ZHOYnJbsmBMDaSkDpAhv3OFiyP0tXS_vkybStlP1zhk2UM5edoTWzqK-S9z18Z6a_y-ZDCo9LL_H4rEfPGJlP9D1yQWkM9TYoBy739ihjtcSjqghf5FuVRKIs-xHqeIK-MWyggPfttrdxas2ROqm9ZCtJFrBREmgWHnJ05V7c9Q",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/group/258651cfd4ca41cbaa70d1b233659b5c/authority/menu",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"group",
+												"258651cfd4ca41cbaa70d1b233659b5c",
+												"authority",
+												"menu"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "保存分配的权限",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNjcxNzIyODksImV4cCI6MTU0NDE3Nzk3MiwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIzMjBmZGU0Ni00N2VkLTQyZjgtYjcwNC1hZjU4NGE1MTE1ZGUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.ZHOYnJbsmBMDaSkDpAhv3OFiyP0tXS_vkybStlP1zhk2UM5edoTWzqK-S9z18Z6a_y-ZDCo9LL_H4rEfPGJlP9D1yQWkM9TYoBy739ihjtcSjqghf5FuVRKIs-xHqeIK-MWyggPfttrdxas2ROqm9ZCtJFrBREmgWHnJ05V7c9Q",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/group/71bc1cc3486b4de696149ce635333867/authority/menu?menuTrees=",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"group",
+												"71bc1cc3486b4de696149ce635333867",
+												"authority",
+												"menu"
+											],
+											"query": [
+												{
+													"key": "menuTrees",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "添加权限",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNjcxNzIyODksImV4cCI6MTU0NDE3Nzk3MiwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIzMjBmZGU0Ni00N2VkLTQyZjgtYjcwNC1hZjU4NGE1MTE1ZGUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.ZHOYnJbsmBMDaSkDpAhv3OFiyP0tXS_vkybStlP1zhk2UM5edoTWzqK-S9z18Z6a_y-ZDCo9LL_H4rEfPGJlP9D1yQWkM9TYoBy739ihjtcSjqghf5FuVRKIs-xHqeIK-MWyggPfttrdxas2ROqm9ZCtJFrBREmgWHnJ05V7c9Q",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/group/71bc1cc3486b4de696149ce635333867/authority/element/add?menuId=6&elementId=10",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"group",
+												"71bc1cc3486b4de696149ce635333867",
+												"authority",
+												"element",
+												"add"
+											],
+											"query": [
+												{
+													"key": "menuId",
+													"value": "6"
+												},
+												{
+													"key": "elementId",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "移除权限",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNjcxNzIyODksImV4cCI6MTU0NDE3Nzk3MiwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIzMjBmZGU0Ni00N2VkLTQyZjgtYjcwNC1hZjU4NGE1MTE1ZGUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.ZHOYnJbsmBMDaSkDpAhv3OFiyP0tXS_vkybStlP1zhk2UM5edoTWzqK-S9z18Z6a_y-ZDCo9LL_H4rEfPGJlP9D1yQWkM9TYoBy739ihjtcSjqghf5FuVRKIs-xHqeIK-MWyggPfttrdxas2ROqm9ZCtJFrBREmgWHnJ05V7c9Q",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/admin/group/71bc1cc3486b4de696149ce635333867/authority/element/remove?menuId=1&elementId=4",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"admin",
+												"group",
+												"71bc1cc3486b4de696149ce635333867",
+												"authority",
+												"element",
+												"remove"
+											],
+											"query": [
+												{
+													"key": "menuId",
+													"value": "1"
+												},
+												{
+													"key": "elementId",
+													"value": "4"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "获取角色分组信息",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNTI2NDg0NjksImV4cCI6MTU0NDE2MzQ0OCwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIxNGY4ZWE2ZS03Mzg2LTRhNDMtOTZlNi1mZmRhZjJhYmY0MDUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.fcgCE1NfbmCOkiNpfL6wPTdZNGEW7LTdSD5UMW0rewuev6m15wLmau_l1dQkn1mQus8vR6q7KzZRnDHh_XInZ6fF76ECMbAVY6SGgXvQX8ox2H7GYHmEAs9Jfy-0Z4KOicMZxpsgaasJu4E0R7n6BlJoYb3J5SsGoeo7zamRAGM",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/admin/groupType/all",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"admin",
+										"groupType",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "获取单个分组集合",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNjcxNzIyODksImV4cCI6MTU0NDE3Nzk3MiwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIzMjBmZGU0Ni00N2VkLTQyZjgtYjcwNC1hZjU4NGE1MTE1ZGUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.ZHOYnJbsmBMDaSkDpAhv3OFiyP0tXS_vkybStlP1zhk2UM5edoTWzqK-S9z18Z6a_y-ZDCo9LL_H4rEfPGJlP9D1yQWkM9TYoBy739ihjtcSjqghf5FuVRKIs-xHqeIK-MWyggPfttrdxas2ROqm9ZCtJFrBREmgWHnJ05V7c9Q",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/admin/group/tree?groupType=role",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"admin",
+										"group",
+										"tree"
+									],
+									"query": [
+										{
+											"key": "groupType",
+											"value": "role"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "编辑单个分组信息",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxNjcxNzIyODksImV4cCI6MTU0NDE3Nzk3MiwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIzMjBmZGU0Ni00N2VkLTQyZjgtYjcwNC1hZjU4NGE1MTE1ZGUiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.ZHOYnJbsmBMDaSkDpAhv3OFiyP0tXS_vkybStlP1zhk2UM5edoTWzqK-S9z18Z6a_y-ZDCo9LL_H4rEfPGJlP9D1yQWkM9TYoBy739ihjtcSjqghf5FuVRKIs-xHqeIK-MWyggPfttrdxas2ROqm9ZCtJFrBREmgWHnJ05V7c9Q",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"6d6351aa06f64f138a99c3feeaa83f68\",\n    \"code\": \"TESTGROUP\",\n    \"name\": \"测试分组\",\n    \"parentId\": \"-1\",\n    \"path\": \"/DDD\",\n    \"groupType\": \"free\",\n    \"description\": \"DD1\",\n    \"crtUserName\": \"李尚志\",\n    \"crtUserId\": \"1\",\n    \"crtTime\": \"2018-11-26 17:07:47\",\n    \"updUserName\": \"李尚志\",\n    \"updUserId\": \"1\",\n    \"updTime\": \"2018-11-26 17:07:47\",\n    \"tenantId\": \"ac88ceb386aa4231b09bf472cb937c24\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/admin/group/6d6351aa06f64f138a99c3feeaa83f68",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"admin",
+										"group",
+										"6d6351aa06f64f138a99c3feeaa83f68"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "服务管理",
+			"item": [
+				{
+					"name": "服务权限管理",
+					"item": [
+						{
+							"name": "服务授权",
+							"item": [
+								{
+									"name": "获取已授权服务",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQ0MTE5MjMxMjMsImV4cCI6MTU0NDQyMjcyMywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3NDJkYzhhNy1lOWQ5LTRjMjctODFiZS01ZjhlMDlhZDNmMTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ba10zH1tEpmYA_LlUrfSKaMYvkeNEVhdwXpJFI2tXROF3LUDXtiqIOIrF9h2dixJOYcWDGVtIpOCagqq6UCOmSoTeEppfFcISV1KfiEuXyc7LZIBcj0TBXAPamTSxH2arQjGJ8pjr4VTiIGwcGRbNRmOq6InTKmDRAjp4R2ugk4",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/auth/service/1/client",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"auth",
+												"service",
+												"1",
+												"client"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "修改/保存服务授权",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQ0MTE5MjMxMjMsImV4cCI6MTU0NDQyMjcyMywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3NDJkYzhhNy1lOWQ5LTRjMjctODFiZS01ZjhlMDlhZDNmMTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ba10zH1tEpmYA_LlUrfSKaMYvkeNEVhdwXpJFI2tXROF3LUDXtiqIOIrF9h2dixJOYcWDGVtIpOCagqq6UCOmSoTeEppfFcISV1KfiEuXyc7LZIBcj0TBXAPamTSxH2arQjGJ8pjr4VTiIGwcGRbNRmOq6InTKmDRAjp4R2ugk4",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8765/api/auth/service/1/client?clients=3,6,20",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8765",
+											"path": [
+												"api",
+												"auth",
+												"service",
+												"1",
+												"client"
+											],
+											"query": [
+												{
+													"key": "clients",
+													"value": "3,6,20"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "获取服务列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxODE3NTgxOTIsImV4cCI6MTU0NDE5MjU1OCwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJhZTU1MTdkNy02YTFlLTQzNDEtYjA1OS01MWRkODM5NzdiZDgiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Envrsd5nKXQourzA2ND8k8wSfz9PRZox2G826ZPSdgte1SHCi8zfjwYGvIRLXDg9GUFRqEm47AF1c6KorVIFAiJxDXSsO9jo7CXH2G0e5Ti2oEQUgWHo_z6s-mGlVJ_Y1mA7CyD9rhowXAJTsm7vKsB_QSMqgIqvHwVm17FO1ho",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/auth/service/page?page=1&limit=20",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"auth",
+										"service",
+										"page"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "搜索服务列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxODE3NTgxOTIsImV4cCI6MTU0NDE5MjU1OCwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJhZTU1MTdkNy02YTFlLTQzNDEtYjA1OS01MWRkODM5NzdiZDgiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Envrsd5nKXQourzA2ND8k8wSfz9PRZox2G826ZPSdgte1SHCi8zfjwYGvIRLXDg9GUFRqEm47AF1c6KorVIFAiJxDXSsO9jo7CXH2G0e5Ti2oEQUgWHo_z6s-mGlVJ_Y1mA7CyD9rhowXAJTsm7vKsB_QSMqgIqvHwVm17FO1ho",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/auth/service/page?page=1&limit=20&name=icloud-gate",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"auth",
+										"service",
+										"page"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										},
+										{
+											"key": "name",
+											"value": "icloud-gate"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "获取服务信息",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxODE3NTgxOTIsImV4cCI6MTU0NDE5MjU1OCwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJhZTU1MTdkNy02YTFlLTQzNDEtYjA1OS01MWRkODM5NzdiZDgiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Envrsd5nKXQourzA2ND8k8wSfz9PRZox2G826ZPSdgte1SHCi8zfjwYGvIRLXDg9GUFRqEm47AF1c6KorVIFAiJxDXSsO9jo7CXH2G0e5Ti2oEQUgWHo_z6s-mGlVJ_Y1mA7CyD9rhowXAJTsm7vKsB_QSMqgIqvHwVm17FO1ho",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/auth/service/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"auth",
+										"service",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改服务信息",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxODE3NTgxOTIsImV4cCI6MTU0NDE5MjU1OCwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJhZTU1MTdkNy02YTFlLTQzNDEtYjA1OS01MWRkODM5NzdiZDgiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Envrsd5nKXQourzA2ND8k8wSfz9PRZox2G826ZPSdgte1SHCi8zfjwYGvIRLXDg9GUFRqEm47AF1c6KorVIFAiJxDXSsO9jo7CXH2G0e5Ti2oEQUgWHo_z6s-mGlVJ_Y1mA7CyD9rhowXAJTsm7vKsB_QSMqgIqvHwVm17FO1ho",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"1\",\n    \"code\": \"icloud-gate\",\n    \"secret\": \"123456\",\n    \"name\": \"icloud-gate\",\n    \"locked\": \"0\",\n    \"description\": \"服务网关\",\n    \"crtUser\": \"\",\n    \"crtName\": \"\",\n    \"crtHost\": \"\",\n    \"updTime\": \"2017-07-07 21:51:32\",\n    \"updUser\": \"1\",\n    \"updName\": \"管理员\",\n    \"updHost\": \"0:0:0:0:0:0:0:1\",\n    \"attr1\": \"\",\n    \"attr2\": \"\",\n    \"attr3\": \"\",\n    \"attr4\": \"\",\n    \"attr5\": \"\",\n    \"attr6\": \"\",\n    \"attr7\": \"\",\n    \"attr8\": \"\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/auth/service/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"auth",
+										"service",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "添加服务信息",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxODE3NTgxOTIsImV4cCI6MTU0NDE5MjU1OCwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJhZTU1MTdkNy02YTFlLTQzNDEtYjA1OS01MWRkODM5NzdiZDgiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Envrsd5nKXQourzA2ND8k8wSfz9PRZox2G826ZPSdgte1SHCi8zfjwYGvIRLXDg9GUFRqEm47AF1c6KorVIFAiJxDXSsO9jo7CXH2G0e5Ti2oEQUgWHo_z6s-mGlVJ_Y1mA7CyD9rhowXAJTsm7vKsB_QSMqgIqvHwVm17FO1ho",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"服务测试\",\n    \"sex\": \"男\",\n    \"description\": \"ddddddd\",\n    \"code\": \"icloud-cache\",\n    \"secret\": \"sssss\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/auth/service",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"auth",
+										"service"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "删除服务信息",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQxODE3NTgxOTIsImV4cCI6MTU0NDE5MjU1OCwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJhZTU1MTdkNy02YTFlLTQzNDEtYjA1OS01MWRkODM5NzdiZDgiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Envrsd5nKXQourzA2ND8k8wSfz9PRZox2G826ZPSdgte1SHCi8zfjwYGvIRLXDg9GUFRqEm47AF1c6KorVIFAiJxDXSsO9jo7CXH2G0e5Ti2oEQUgWHo_z6s-mGlVJ_Y1mA7CyD9rhowXAJTsm7vKsB_QSMqgIqvHwVm17FO1ho",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/auth/service/6ecdea4710194f059d45310ff814dbbc",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"auth",
+										"service",
+										"6ecdea4710194f059d45310ff814dbbc"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "服务接口文档",
+					"item": [],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "网关路由管理",
+					"item": [
+						{
+							"name": "获取网关路由服务列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQ0MTE5MjMxMjMsImV4cCI6MTU0NDQyMjcyMywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3NDJkYzhhNy1lOWQ5LTRjMjctODFiZS01ZjhlMDlhZDNmMTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ba10zH1tEpmYA_LlUrfSKaMYvkeNEVhdwXpJFI2tXROF3LUDXtiqIOIrF9h2dixJOYcWDGVtIpOCagqq6UCOmSoTeEppfFcISV1KfiEuXyc7LZIBcj0TBXAPamTSxH2arQjGJ8pjr4VTiIGwcGRbNRmOq6InTKmDRAjp4R2ugk4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/auth/gatewayRoute/page?page=1&limit=20",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"auth",
+										"gatewayRoute",
+										"page"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "获取网关路由服务信息",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQ0MTE5MjMxMjMsImV4cCI6MTU0NDQyMjcyMywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3NDJkYzhhNy1lOWQ5LTRjMjctODFiZS01ZjhlMDlhZDNmMTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ba10zH1tEpmYA_LlUrfSKaMYvkeNEVhdwXpJFI2tXROF3LUDXtiqIOIrF9h2dixJOYcWDGVtIpOCagqq6UCOmSoTeEppfFcISV1KfiEuXyc7LZIBcj0TBXAPamTSxH2arQjGJ8pjr4VTiIGwcGRbNRmOq6InTKmDRAjp4R2ugk4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/auth/gatewayRoute/admin",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"auth",
+										"gatewayRoute",
+										"admin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改/保存网关路由服务信息",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQ0MTE5MjMxMjMsImV4cCI6MTU0NDQyMjcyMywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3NDJkYzhhNy1lOWQ5LTRjMjctODFiZS01ZjhlMDlhZDNmMTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ba10zH1tEpmYA_LlUrfSKaMYvkeNEVhdwXpJFI2tXROF3LUDXtiqIOIrF9h2dixJOYcWDGVtIpOCagqq6UCOmSoTeEppfFcISV1KfiEuXyc7LZIBcj0TBXAPamTSxH2arQjGJ8pjr4VTiIGwcGRbNRmOq6InTKmDRAjp4R2ugk4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"admin\",\n    \"path\": \"/admin/**\",\n    \"serviceId\": \"icloud-admin\",\n    \"retryable\": false,\n    \"enabled\": true,\n    \"stripPrefix\": true,\n    \"crtUserName\": \"Shangzhi.Li\",\n    \"crtUserId\": \"1\",\n    \"crtTime\": \"2018-11-14 14:33:30\",\n    \"updUserName\": \"Shangzhi.Li\",\n    \"updUserId\": \"1\",\n    \"updTime\": \"2018-11-14 14:33:30\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/auth/gatewayRoute/admin",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"auth",
+										"gatewayRoute",
+										"admin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "添加网关路由服务信息",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQ0MTE5MjMxMjMsImV4cCI6MTU0NDQyMjcyMywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3NDJkYzhhNy1lOWQ5LTRjMjctODFiZS01ZjhlMDlhZDNmMTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ba10zH1tEpmYA_LlUrfSKaMYvkeNEVhdwXpJFI2tXROF3LUDXtiqIOIrF9h2dixJOYcWDGVtIpOCagqq6UCOmSoTeEppfFcISV1KfiEuXyc7LZIBcj0TBXAPamTSxH2arQjGJ8pjr4VTiIGwcGRbNRmOq6InTKmDRAjp4R2ugk4",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"path\": \"/test/*\",\n    \"serviceId\": \"test\",\n    \"retryable\": false,\n    \"enabled\": true,\n    \"stripPrefix\": true,\n    \"id\": \"test\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/auth/gatewayRoute",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"auth",
+										"gatewayRoute"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "搜索网关路由服务列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQ0MTE5MjMxMjMsImV4cCI6MTU0NDQyMjcyMywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3NDJkYzhhNy1lOWQ5LTRjMjctODFiZS01ZjhlMDlhZDNmMTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ba10zH1tEpmYA_LlUrfSKaMYvkeNEVhdwXpJFI2tXROF3LUDXtiqIOIrF9h2dixJOYcWDGVtIpOCagqq6UCOmSoTeEppfFcISV1KfiEuXyc7LZIBcj0TBXAPamTSxH2arQjGJ8pjr4VTiIGwcGRbNRmOq6InTKmDRAjp4R2ugk4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/auth/gatewayRoute/page?page=1&limit=20&serviceId=icloud",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"auth",
+										"gatewayRoute",
+										"page"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										},
+										{
+											"key": "serviceId",
+											"value": "icloud"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "客户端管理",
+					"item": [
+						{
+							"name": "搜索客户端列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDQ0MTE5MjMxMjMsImV4cCI6MTU0NDQyMjcyMywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3NDJkYzhhNy1lOWQ5LTRjMjctODFiZS01ZjhlMDlhZDNmMTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ba10zH1tEpmYA_LlUrfSKaMYvkeNEVhdwXpJFI2tXROF3LUDXtiqIOIrF9h2dixJOYcWDGVtIpOCagqq6UCOmSoTeEppfFcISV1KfiEuXyc7LZIBcj0TBXAPamTSxH2arQjGJ8pjr4VTiIGwcGRbNRmOq6InTKmDRAjp4R2ugk4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/auth/oauthClientDetails/page?page=1&limit=20&clientSecret=client",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"auth",
+										"oauthClientDetails",
+										"page"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										},
+										{
+											"key": "clientSecret",
+											"value": "client"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "VSIM管理",
+			"item": [
+				{
+					"name": "基础商品管理",
+					"item": [
+						{
+							"name": "新增基础商品",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDc0NTM0NTU3ODMsImV4cCI6MTU0NzQ2NDI1NSwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3MGYxYzFlOC1jYzk5LTRlMzEtYWEzYy1kOWM0YjE5NmU3NmMiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.kl5_78l8A5k0-VHF-f5Hr5hn3MbD8Fo-MvKtFdZzKvns0L98qD_18H4npWZQMpKWg-fPwiLviSbhKk5UHCGS4_yzleDOCs1QhGG3eoCAifHZh0gRuRfBc_4IHmkUlGDuAzR8ePXNmGUhMNCBP860ZKfNoQwMcdI9dqBpoA2BUCg"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"baseItemName\": \"测试哈哈哈\",\n    \"baseItemType\": 1,\n    \"baseItemCapacity\": 100,\n    \"productId\": 70018055,\n    \"speedLimit\": \"你用就打死你\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/baseItem/addBaseItem",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"baseItem",
+										"addBaseItem"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "查询基础商品列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDc0NTM0NTU3ODMsImV4cCI6MTU0NzQ2NDI1NSwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3MGYxYzFlOC1jYzk5LTRlMzEtYWEzYy1kOWM0YjE5NmU3NmMiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.kl5_78l8A5k0-VHF-f5Hr5hn3MbD8Fo-MvKtFdZzKvns0L98qD_18H4npWZQMpKWg-fPwiLviSbhKk5UHCGS4_yzleDOCs1QhGG3eoCAifHZh0gRuRfBc_4IHmkUlGDuAzR8ePXNmGUhMNCBP860ZKfNoQwMcdI9dqBpoA2BUCg"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/baseItem/queryBaseItemByPage?page=1&limit=10&=&baseItemId=1&baseItemName=&baseItemType=1&deviceType=1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"baseItem",
+										"queryBaseItemByPage"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "",
+											"value": ""
+										},
+										{
+											"key": "baseItemId",
+											"value": "1"
+										},
+										{
+											"key": "baseItemName",
+											"value": ""
+										},
+										{
+											"key": "baseItemType",
+											"value": "1"
+										},
+										{
+											"key": "deviceType",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改基础商品信息",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDY4NDU3ODc3ODksImV4cCI6MTU0Njg1NjU4NywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5MWU0MmU2NC1jNGRiLTQ2ODAtYTJlNC1iNWJlZTgxMDFjOTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ot4g8NIalDD5VCBqfgHd6D1yCV9xfD3sIfRPEWOFHQzzSoNSqG82WH3zPSqHg_K5k_Prv4mK1dcnmcDtnnyE6vxwrGphdutwNWNISATNRKDqJzRd91yEq9Sr54GKaMHfkkMYF5YJqVO8y2gv3bIJOpt_3H8b49GbUn3NFnlHRBA"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"baseItemName\":\"444444\", \"speedLimit\":\"无\"}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/baseItem/modifyBaseItem/12",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"baseItem",
+										"modifyBaseItem",
+										"12"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改基础商品状态",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDY4NDU3ODc3ODksImV4cCI6MTU0Njg1NjU4NywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5MWU0MmU2NC1jNGRiLTQ2ODAtYTJlNC1iNWJlZTgxMDFjOTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ot4g8NIalDD5VCBqfgHd6D1yCV9xfD3sIfRPEWOFHQzzSoNSqG82WH3zPSqHg_K5k_Prv4mK1dcnmcDtnnyE6vxwrGphdutwNWNISATNRKDqJzRd91yEq9Sr54GKaMHfkkMYF5YJqVO8y2gv3bIJOpt_3H8b49GbUn3NFnlHRBA"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/baseItem/modifyBaseItemStatus/12",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"baseItem",
+										"modifyBaseItemStatus",
+										"12"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "查询租户商品列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDc0NTM0NTU3ODMsImV4cCI6MTU0NzQ2NDI1NSwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3MGYxYzFlOC1jYzk5LTRlMzEtYWEzYy1kOWM0YjE5NmU3NmMiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.kl5_78l8A5k0-VHF-f5Hr5hn3MbD8Fo-MvKtFdZzKvns0L98qD_18H4npWZQMpKWg-fPwiLviSbhKk5UHCGS4_yzleDOCs1QhGG3eoCAifHZh0gRuRfBc_4IHmkUlGDuAzR8ePXNmGUhMNCBP860ZKfNoQwMcdI9dqBpoA2BUCg"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/baseItem/queryTenantItemByPage?page=1&limit=10&tenantId=ac88ceb386aa4231b09bf472cb937c24&baseItemId=1&baseItemType=0",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"baseItem",
+										"queryTenantItemByPage"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "tenantId",
+											"value": "ac88ceb386aa4231b09bf472cb937c24"
+										},
+										{
+											"key": "baseItemId",
+											"value": "1"
+										},
+										{
+											"key": "baseItemName",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "baseItemType",
+											"value": "0"
+										},
+										{
+											"key": "deviceType",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "新增租户商品",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDY4NDU3ODc3ODksImV4cCI6MTU0Njg1NjU4NywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5MWU0MmU2NC1jNGRiLTQ2ODAtYTJlNC1iNWJlZTgxMDFjOTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ot4g8NIalDD5VCBqfgHd6D1yCV9xfD3sIfRPEWOFHQzzSoNSqG82WH3zPSqHg_K5k_Prv4mK1dcnmcDtnnyE6vxwrGphdutwNWNISATNRKDqJzRd91yEq9Sr54GKaMHfkkMYF5YJqVO8y2gv3bIJOpt_3H8b49GbUn3NFnlHRBA"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"tenantId\":\"111222222\",\"baseItemId\":3,\"baseItemPrice\":100}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/baseItem/addTenantItem",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"baseItem",
+										"addTenantItem"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改租户商品价格",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDY4NDU3ODc3ODksImV4cCI6MTU0Njg1NjU4NywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5MWU0MmU2NC1jNGRiLTQ2ODAtYTJlNC1iNWJlZTgxMDFjOTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ot4g8NIalDD5VCBqfgHd6D1yCV9xfD3sIfRPEWOFHQzzSoNSqG82WH3zPSqHg_K5k_Prv4mK1dcnmcDtnnyE6vxwrGphdutwNWNISATNRKDqJzRd91yEq9Sr54GKaMHfkkMYF5YJqVO8y2gv3bIJOpt_3H8b49GbUn3NFnlHRBA"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"baseItemPrice\":\"444444\"}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/baseItem/modifyItemPrice/2bdc3481e5724f9eb32786131bd7aff1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"baseItem",
+										"modifyItemPrice",
+										"2bdc3481e5724f9eb32786131bd7aff1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改租户商品状态",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDY4NDU3ODc3ODksImV4cCI6MTU0Njg1NjU4NywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5MWU0MmU2NC1jNGRiLTQ2ODAtYTJlNC1iNWJlZTgxMDFjOTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ot4g8NIalDD5VCBqfgHd6D1yCV9xfD3sIfRPEWOFHQzzSoNSqG82WH3zPSqHg_K5k_Prv4mK1dcnmcDtnnyE6vxwrGphdutwNWNISATNRKDqJzRd91yEq9Sr54GKaMHfkkMYF5YJqVO8y2gv3bIJOpt_3H8b49GbUn3NFnlHRBA"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"baseItemPrice\":\"444444\"}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/baseItem/modifyTenantItemStatus/2bdc3481e5724f9eb32786131bd7aff1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"baseItem",
+										"modifyTenantItemStatus",
+										"2bdc3481e5724f9eb32786131bd7aff1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "终端设备管理",
+					"item": [
+						{
+							"name": "修改租户设备类型状态",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDY4NDU3ODc3ODksImV4cCI6MTU0Njg1NjU4NywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5MWU0MmU2NC1jNGRiLTQ2ODAtYTJlNC1iNWJlZTgxMDFjOTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ot4g8NIalDD5VCBqfgHd6D1yCV9xfD3sIfRPEWOFHQzzSoNSqG82WH3zPSqHg_K5k_Prv4mK1dcnmcDtnnyE6vxwrGphdutwNWNISATNRKDqJzRd91yEq9Sr54GKaMHfkkMYF5YJqVO8y2gv3bIJOpt_3H8b49GbUn3NFnlHRBA"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/deviceType/modifyTenantDeviceTypeStatus/47f3e6496b7046869dab2000d6465b08",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"deviceType",
+										"modifyTenantDeviceTypeStatus",
+										"47f3e6496b7046869dab2000d6465b08"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "查询租户设备类型列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDc0NTM0NTU3ODMsImV4cCI6MTU0NzQ2NDI1NSwiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3MGYxYzFlOC1jYzk5LTRlMzEtYWEzYy1kOWM0YjE5NmU3NmMiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.kl5_78l8A5k0-VHF-f5Hr5hn3MbD8Fo-MvKtFdZzKvns0L98qD_18H4npWZQMpKWg-fPwiLviSbhKk5UHCGS4_yzleDOCs1QhGG3eoCAifHZh0gRuRfBc_4IHmkUlGDuAzR8ePXNmGUhMNCBP860ZKfNoQwMcdI9dqBpoA2BUCg"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/deviceType/queryTenantDeviceTypeByPage?page=1&limit=10&tenantId=222222",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"deviceType",
+										"queryTenantDeviceTypeByPage"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "tenantId",
+											"value": "222222"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改设备类型状态",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDY4NDU3ODc3ODksImV4cCI6MTU0Njg1NjU4NywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5MWU0MmU2NC1jNGRiLTQ2ODAtYTJlNC1iNWJlZTgxMDFjOTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ot4g8NIalDD5VCBqfgHd6D1yCV9xfD3sIfRPEWOFHQzzSoNSqG82WH3zPSqHg_K5k_Prv4mK1dcnmcDtnnyE6vxwrGphdutwNWNISATNRKDqJzRd91yEq9Sr54GKaMHfkkMYF5YJqVO8y2gv3bIJOpt_3H8b49GbUn3NFnlHRBA"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/deviceType/modifyDeviceTypeStatus/12",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"deviceType",
+										"modifyDeviceTypeStatus",
+										"12"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改设备类型信息",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDY4NDU3ODc3ODksImV4cCI6MTU0Njg1NjU4NywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5MWU0MmU2NC1jNGRiLTQ2ODAtYTJlNC1iNWJlZTgxMDFjOTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ot4g8NIalDD5VCBqfgHd6D1yCV9xfD3sIfRPEWOFHQzzSoNSqG82WH3zPSqHg_K5k_Prv4mK1dcnmcDtnnyE6vxwrGphdutwNWNISATNRKDqJzRd91yEq9Sr54GKaMHfkkMYF5YJqVO8y2gv3bIJOpt_3H8b49GbUn3NFnlHRBA"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"productFlows\":\"8888\"}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/deviceType/modifyDeviceType/12",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"deviceType",
+										"modifyDeviceType",
+										"12"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "查询设备类型列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDY4NDU3ODc3ODksImV4cCI6MTU0Njg1NjU4NywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5MWU0MmU2NC1jNGRiLTQ2ODAtYTJlNC1iNWJlZTgxMDFjOTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ot4g8NIalDD5VCBqfgHd6D1yCV9xfD3sIfRPEWOFHQzzSoNSqG82WH3zPSqHg_K5k_Prv4mK1dcnmcDtnnyE6vxwrGphdutwNWNISATNRKDqJzRd91yEq9Sr54GKaMHfkkMYF5YJqVO8y2gv3bIJOpt_3H8b49GbUn3NFnlHRBA"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/deviceType/queryDeviceTypeByPage?page=1&limit=10&deviceTypeName=",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"deviceType",
+										"queryDeviceTypeByPage"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "deviceTypeName",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "新增租户设备类型",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDY4NDU3ODc3ODksImV4cCI6MTU0Njg1NjU4NywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5MWU0MmU2NC1jNGRiLTQ2ODAtYTJlNC1iNWJlZTgxMDFjOTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ot4g8NIalDD5VCBqfgHd6D1yCV9xfD3sIfRPEWOFHQzzSoNSqG82WH3zPSqHg_K5k_Prv4mK1dcnmcDtnnyE6vxwrGphdutwNWNISATNRKDqJzRd91yEq9Sr54GKaMHfkkMYF5YJqVO8y2gv3bIJOpt_3H8b49GbUn3NFnlHRBA"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"tenantId\":\"222222\",\"deviceType\":5}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/deviceType/addTenantDeviceType",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"deviceType",
+										"addTenantDeviceType"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "新增设备类型",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJfbmFtZSI6ImFkbWluIiwic2NvcGUiOlsicmVhZCJdLCJleHBpcmUiOjE1NDY4NDU3ODc3ODksImV4cCI6MTU0Njg1NjU4NywiZGVwYXJ0Ijoicm9vdCIsInVzZXJOYW1lIjoi5p2O5bCa5b-XIiwidXNlcklkIjoiMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI5MWU0MmU2NC1jNGRiLTQ2ODAtYTJlNC1iNWJlZTgxMDFjOTAiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InZ1ZSJ9.Ot4g8NIalDD5VCBqfgHd6D1yCV9xfD3sIfRPEWOFHQzzSoNSqG82WH3zPSqHg_K5k_Prv4mK1dcnmcDtnnyE6vxwrGphdutwNWNISATNRKDqJzRd91yEq9Sr54GKaMHfkkMYF5YJqVO8y2gv3bIJOpt_3H8b49GbUn3NFnlHRBA"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"deviceTypeName\":\"SIMO14\",\"productFlows\":\"6\"}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8765/api/upms/deviceType/addDeviceType",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8765",
+									"path": [
+										"api",
+										"upms",
+										"deviceType",
+										"addDeviceType"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	]
+}

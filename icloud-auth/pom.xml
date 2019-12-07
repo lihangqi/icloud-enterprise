@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>com.gitee.icloud</groupId>
+		<artifactId>icloud-iot</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>icloud-auth</artifactId>
+	<packaging>pom</packaging>
+	
+	<developers>
+        <developer>
+            <name>Li.Shangzhi(iByte)</name>
+            <email>13680348517@163.com</email>
+        </developer>
+    </developers>
+
+	<modules>
+		<module>icloud-auth-client</module>
+		<module>icloud-auth-server</module>
+	</modules>
+
+</project>

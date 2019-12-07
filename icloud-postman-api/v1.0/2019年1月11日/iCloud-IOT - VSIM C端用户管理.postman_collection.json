@@ -1,0 +1,249 @@
+{
+	"id": "aefbe911-9272-2fa9-b847-fc154e7fd6dc",
+	"name": "iCloud-IOT / VSIM 开放API",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "78d66063-5085-477b-9c43-c43935acb67d",
+			"name": "用户管理",
+			"description": "",
+			"order": [
+				"05d5a717-7e80-858d-7b1b-f7afef507d4e",
+				"feca8613-61fb-e03b-9f2a-7fbd50ae3281",
+				"b3f74260-6973-6060-d81a-7bdf8920babf",
+				"c544d37d-c484-2dea-7ab6-80c994bdd6e7",
+				"d563774f-ee1d-f2b6-a375-5580c98f078f"
+			],
+			"folders_order": [],
+			"owner": 0,
+			"collectionId": "aefbe911-9272-2fa9-b847-fc154e7fd6dc"
+		}
+	],
+	"folders_order": [
+		"78d66063-5085-477b-9c43-c43935acb67d"
+	],
+	"timestamp": 0,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "05d5a717-7e80-858d-7b1b-f7afef507d4e",
+			"headers": "x-tenant-flag: 1\nAuthorization: Basic c2t5cm9hbTpza3lyb2FtXmlvdCo=\n",
+			"headerData": [
+				{
+					"key": "x-tenant-flag",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic c2t5cm9hbTpza3lyb2FtXmlvdCo=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8765/api/a1a2cb17b4f24e50bbde2f1b8a233bcb/vsim/user/register",
+			"folder": "78d66063-5085-477b-9c43-c43935acb67d",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "mobile",
+					"value": "13680348518",
+					"type": "text"
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"type": "text"
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1546583011279,
+			"name": "注册用户",
+			"description": "",
+			"collectionId": "aefbe911-9272-2fa9-b847-fc154e7fd6dc",
+			"responses": []
+		},
+		{
+			"id": "b3f74260-6973-6060-d81a-7bdf8920babf",
+			"headers": "x-tenant-flag: 1\nAuthorization: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMzY4MDM0ODUxOCIsInVzZXJfbmFtZSI6IjEzNjgwMzQ4NTE4Iiwic2NvcGUiOlsic2t5cm9hbSJdLCJleHBpcmUiOjE1NDY1MTM0OTM3MDksImV4cCI6MTU0NjUxMzQ5MywidXNlck5hbWUiOiJ4eHhfMTM2ODAzNDg1MTgiLCJ1c2VySWQiOiI3Yjc0OWI1YjE3MWQ0NTkxYjVjM2JiZjQ4ZDUwZTY1NyIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJlNjZlNWZjZi0zNTAwLTRlMTYtYWQwOS02NjI3ZGIxN2ZmMGEiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InNreXJvYW0ifQ.CGCIlY6Z8VG8A0xe-4pKB-4-nRBo2y_z__mAJndMuwBb4REzY8neMfFGuUu5APyX57uyxCkxALeNW4PmUQntb2yGgzrsmfWoP3TQC1Zb9huUf78-Ys-91lDGuK2VcNfoghfKiW3Hmz97RhPnAUwIh45L8XpKiI_menBKEox_fY8\n",
+			"headerData": [
+				{
+					"key": "x-tenant-flag",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMzY4MDM0ODUxOCIsInVzZXJfbmFtZSI6IjEzNjgwMzQ4NTE4Iiwic2NvcGUiOlsic2t5cm9hbSJdLCJleHBpcmUiOjE1NDY1MTM0OTM3MDksImV4cCI6MTU0NjUxMzQ5MywidXNlck5hbWUiOiJ4eHhfMTM2ODAzNDg1MTgiLCJ1c2VySWQiOiI3Yjc0OWI1YjE3MWQ0NTkxYjVjM2JiZjQ4ZDUwZTY1NyIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiJlNjZlNWZjZi0zNTAwLTRlMTYtYWQwOS02NjI3ZGIxN2ZmMGEiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InNreXJvYW0ifQ.CGCIlY6Z8VG8A0xe-4pKB-4-nRBo2y_z__mAJndMuwBb4REzY8neMfFGuUu5APyX57uyxCkxALeNW4PmUQntb2yGgzrsmfWoP3TQC1Zb9huUf78-Ys-91lDGuK2VcNfoghfKiW3Hmz97RhPnAUwIh45L8XpKiI_menBKEox_fY8",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8765/api/ac88ceb386aa4231b09bf472cb937c24/vsim/user/info",
+			"folder": "78d66063-5085-477b-9c43-c43935acb67d",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1545908758765,
+			"name": "获取用户信息",
+			"description": "",
+			"collectionId": "aefbe911-9272-2fa9-b847-fc154e7fd6dc",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "c544d37d-c484-2dea-7ab6-80c994bdd6e7",
+			"headers": "x-tenant-flag: 1\nAuthorization: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMzY4MDM0ODUxNCIsInVzZXJfbmFtZSI6IjEzNjgwMzQ4NTE0Iiwic2NvcGUiOlsic2t5cm9hbSJdLCJleHBpcmUiOjE1NDY2MDE2MTE1NDcsImV4cCI6MTU0NjYwMTYxMSwidXNlck5hbWUiOiJ4eHhfMTM2ODAzNDg1MTQiLCJ1c2VySWQiOiJmM2I2OGJiM2U5ZGU0MTA0ODVlZjhkYWMyZDQ1OTA4OCIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIxYjg3YmMzNS1lNzc4LTQzOTktYTcwYy1mNGFjZTljMjM1YWYiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InNreXJvYW0ifQ.X1iIONkHA3slYzDxpRjOkKjjtoB3dRTMtPPhEJzJxr0EIhYnohaINXOa5ee2x3AjJhtNBav1poX0xaZKX4eRh9DX19VnZPDhMZXm-Mdrtkgn3IppYAOoH-UcOfs05RVjroXVIzxQM39ISNiS6Y9_eEsx8_j-MvlBDntqBDbdoHc\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "x-tenant-flag",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMzY4MDM0ODUxNCIsInVzZXJfbmFtZSI6IjEzNjgwMzQ4NTE0Iiwic2NvcGUiOlsic2t5cm9hbSJdLCJleHBpcmUiOjE1NDY2MDE2MTE1NDcsImV4cCI6MTU0NjYwMTYxMSwidXNlck5hbWUiOiJ4eHhfMTM2ODAzNDg1MTQiLCJ1c2VySWQiOiJmM2I2OGJiM2U5ZGU0MTA0ODVlZjhkYWMyZDQ1OTA4OCIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIxYjg3YmMzNS1lNzc4LTQzOTktYTcwYy1mNGFjZTljMjM1YWYiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InNreXJvYW0ifQ.X1iIONkHA3slYzDxpRjOkKjjtoB3dRTMtPPhEJzJxr0EIhYnohaINXOa5ee2x3AjJhtNBav1poX0xaZKX4eRh9DX19VnZPDhMZXm-Mdrtkgn3IppYAOoH-UcOfs05RVjroXVIzxQM39ISNiS6Y9_eEsx8_j-MvlBDntqBDbdoHc",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8765/api/ac88ceb386aa4231b09bf472cb937c24/vsim/deviceUser/register",
+			"folder": "78d66063-5085-477b-9c43-c43935acb67d",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1546843123066,
+			"name": "注册上网",
+			"description": "",
+			"collectionId": "aefbe911-9272-2fa9-b847-fc154e7fd6dc",
+			"responses": [],
+			"rawModeData": "{\"imei\":\"111111111111122\",\"deviceType\":\"1\"}"
+		},
+		{
+			"id": "d563774f-ee1d-f2b6-a375-5580c98f078f",
+			"headers": "x-tenant-flag: 1\nAuthorization: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMzY4MDM0ODUxNCIsInVzZXJfbmFtZSI6IjEzNjgwMzQ4NTE0Iiwic2NvcGUiOlsic2t5cm9hbSJdLCJleHBpcmUiOjE1NDY2MDE2MTE1NDcsImV4cCI6MTU0NjYwMTYxMSwidXNlck5hbWUiOiJ4eHhfMTM2ODAzNDg1MTQiLCJ1c2VySWQiOiJmM2I2OGJiM2U5ZGU0MTA0ODVlZjhkYWMyZDQ1OTA4OCIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIxYjg3YmMzNS1lNzc4LTQzOTktYTcwYy1mNGFjZTljMjM1YWYiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InNreXJvYW0ifQ.X1iIONkHA3slYzDxpRjOkKjjtoB3dRTMtPPhEJzJxr0EIhYnohaINXOa5ee2x3AjJhtNBav1poX0xaZKX4eRh9DX19VnZPDhMZXm-Mdrtkgn3IppYAOoH-UcOfs05RVjroXVIzxQM39ISNiS6Y9_eEsx8_j-MvlBDntqBDbdoHc\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "x-tenant-flag",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMzY4MDM0ODUxNCIsInVzZXJfbmFtZSI6IjEzNjgwMzQ4NTE0Iiwic2NvcGUiOlsic2t5cm9hbSJdLCJleHBpcmUiOjE1NDY2MDE2MTE1NDcsImV4cCI6MTU0NjYwMTYxMSwidXNlck5hbWUiOiJ4eHhfMTM2ODAzNDg1MTQiLCJ1c2VySWQiOiJmM2I2OGJiM2U5ZGU0MTA0ODVlZjhkYWMyZDQ1OTA4OCIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiIxYjg3YmMzNS1lNzc4LTQzOTktYTcwYy1mNGFjZTljMjM1YWYiLCJ0ZW5hbnQiOiJhYzg4Y2ViMzg2YWE0MjMxYjA5YmY0NzJjYjkzN2MyNCIsImNsaWVudF9pZCI6InNreXJvYW0ifQ.X1iIONkHA3slYzDxpRjOkKjjtoB3dRTMtPPhEJzJxr0EIhYnohaINXOa5ee2x3AjJhtNBav1poX0xaZKX4eRh9DX19VnZPDhMZXm-Mdrtkgn3IppYAOoH-UcOfs05RVjroXVIzxQM39ISNiS6Y9_eEsx8_j-MvlBDntqBDbdoHc",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8765/api/ac88ceb386aa4231b09bf472cb937c24/vsim/baseItem/queryBaseItemList?baseItemType=",
+			"folder": "78d66063-5085-477b-9c43-c43935acb67d",
+			"queryParams": [
+				{
+					"key": "baseItemType",
+					"value": "",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1547192491328,
+			"name": "查询租户基础商品",
+			"description": "",
+			"collectionId": "aefbe911-9272-2fa9-b847-fc154e7fd6dc",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "feca8613-61fb-e03b-9f2a-7fbd50ae3281",
+			"name": "用户登录",
+			"description": "",
+			"collectionId": "aefbe911-9272-2fa9-b847-fc154e7fd6dc",
+			"method": "POST",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic"
+			},
+			"headers": "x-tenant-flag: 1",
+			"dataMode": "params",
+			"data": [
+				{
+					"key": "password",
+					"value": "123456",
+					"type": "text"
+				},
+				{
+					"key": "grant_type",
+					"value": "password",
+					"type": "text"
+				},
+				{
+					"key": "username",
+					"value": "13680348513",
+					"type": "text"
+				}
+			],
+			"rawModeData": "",
+			"url": "http://127.0.0.1:8765/api/ac88ceb386aa4231b09bf472cb937c24/vsim/oauth/token",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "x-tenant-flag",
+					"value": "1",
+					"type": "text"
+				}
+			],
+			"collection_id": "aefbe911-9272-2fa9-b847-fc154e7fd6dc",
+			"folder": "78d66063-5085-477b-9c43-c43935acb67d"
+		}
+	]
+}
