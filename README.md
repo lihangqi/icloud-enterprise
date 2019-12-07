@@ -2,8 +2,6 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-![输入图片说明](https://images.gitee.com/uploads/images/2019/0905/173321_41c3dba6_1468963.png "屏幕截图.png")
-
 #### 项目启动
 ###### 依次启动
 - CenterBootstrap（icloud-center）  	       注册中心
