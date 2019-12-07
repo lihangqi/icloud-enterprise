@@ -2,12 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-[详细说明](https://gitee.com/icloud-iot/icloud-enterprise/wikis/%20iCloud-IOT%20%E4%BC%81%E4%B8%9A%E7%89%88%E9%A1%B9%E7%9B%AE%E8%BF%9B%E5%BA%A6%E8%AF%B4%E6%98%8E)
-
 ![输入图片说明](https://images.gitee.com/uploads/images/2019/0905/173321_41c3dba6_1468963.png "屏幕截图.png")
-
-##### [配置中心服务](https://gitee.com/icloud-iot/icloud-config)
-##### [配置中心文件](https://gitee.com/icloud-iot/icloud-enterprise/tree/master/icloud-config)
 
 #### 项目启动
 ###### 依次启动
